@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .div1 {
+        border: 2px solid white;
+        height: 125px;
+        width: 125px;
+        margin: 100px auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div1:hover {
+        background-color: blueviolet;
+
+        border-radius: 25px;
+        transform: translate(125px, 125px);
+        transition-duration: 2s;
+        transition-delay: 1s;
+        transform: scale(2, 2);
+        transition-property: all;
+      }
+      h2 {
+        text-align: center;
+        border: 2px solid;
+        padding: 20px;
+        box-shadow: 1px 1px 10px 0px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Css - Transitions</h2>
+    <div class="div1">Full Stack Developer</div>
+  </body>
+</html>
